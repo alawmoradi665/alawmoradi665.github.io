@@ -149,7 +149,7 @@
 }
 
 .menu-wrap .menu > div > div > ul > li > a:hover{
-    opacity: 0.8;
     color: #000;
+    transition: 1s;
 
 }

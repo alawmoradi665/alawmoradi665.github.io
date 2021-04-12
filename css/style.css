@@ -59,6 +59,8 @@ body{
 
 }
 
+
+
 .btm{
     display: inline-block;
     border: none;
@@ -72,6 +74,33 @@ body{
 
 .btm:hover{
     opacity: 0.5;
+}
+
+#giticon{
+    display: inline-block;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #000;
+    
+
+
+}
+
+#inicon{
+    display: inline-block;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #3d85e4;
+    
+    
+}
+
+#projectheader{
+    
+    
+    
 }
 
 /* #profilepic{
