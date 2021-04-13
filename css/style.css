@@ -77,22 +77,19 @@ body{
 }
 
 #giticon{
-    display: inline-block;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    left: 180px;
     color: #000;
     
-
 
 }
 
 #inicon{
-    display: inline-block;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    color: #3d85e4;
+    position: absolute;
+    bottom: 10px;
+    right: 180px;
+    color: #0a66c2;
     
     
 }
