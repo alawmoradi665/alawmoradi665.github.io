@@ -14,12 +14,12 @@
 
 :root{
     --primary-color: rgba(238, 230, 216, 0.3);
-    --overlay-color: rgba(248, 241, 225, 0.85);
+    --overlay-color: rgba(248, 241, 225, 0.95);
     --menu-speed: 0.75s;
 }
 
 body{
-    font-family: Arial,Helvetica,sans-serif;
+    
     line-height: 1.4;
 }
 
@@ -29,24 +29,25 @@ body{
     overflow: hidden;
     padding: 0 3rem;
 }
+
 .showcase{
     background-color: var(--primary-color);
     color: #b5b5b5;
     height: 100vh;
-    position: relative;
-
-}
-.showcase:before{
-    content: '';
-    background: url('../img/background.jpg') no-repeat center center/cover;
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    z-index: -1;
-   
+    background: url('../img/background.jpg') no-repeat center center/cover;
+    background-size: cover;
 
+    /* position: absolute; */
+    /* position: relative; */
+    /* content: ''; */
+    /* background: url('../img/background.jpg') no-repeat center center/cover;
+    position: absolute; */
+    /* top: 0;
+    left: 0; */
+   
+    /* height: 100vh; */
+    
 }
 
 .showcase .showcase-inner{
@@ -59,7 +60,46 @@ body{
 
 }
 
+a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
 
+/* Styling about page */
+
+img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 180px;
+  
+}
+
+h1{
+    text-align: center;
+    position: absolute;
+    top: 400px;
+    right: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    
+}
+
+p{
+    text-align: center;
+    position: absolute;
+    top: 435px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 1em;
+}
+
+
+
+
+/* Styling resume button */
 
 .btm{
     display: inline-block;
@@ -76,7 +116,8 @@ body{
     opacity: 0.5;
 }
 
-#giticon{
+
+/* #giticon{
     position: absolute;
     bottom: 10px;
     left: 180px;
@@ -92,28 +133,15 @@ body{
     color: #0a66c2;
     
     
-}
-
-#projectheader{
-    
-    
-    
-}
-
-/* #profilepic{
-    width: 50;
-    margin: 0 50%;
-
 } */
-
 
 
 /* For mobile phones: */
 [class*="col-"] {
     width: 100%;
   }
-  .showcase h1{ font-size: 1.5rem;}
-  .showcase p{ font-size: 0.8rem;}
+  .showcase h1{ font-size: 1.3rem;}
+  .showcase p{ font-size: 0.9rem;}
   .btm{ font-size: 0.7rem;}
   /* .menu-wrap .menu > div > div > ul > li{ font-size: 0.5rem;} */
   
@@ -132,9 +160,10 @@ body{
     .col-s-10 {width: 83.33%;}
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
-    /* #profile img{ width: 40%; margin: 0 30%;} */
-   .showcase h1{font-size: 2rem;}
-   .showcase p{font-size: 1rem;}
+
+   .showcase h1{font-size: 2rem; position: absolute; top: 500px; right: 125px;}
+   .showcase p{font-size: 1.2rem; position: absolute; top: 550px;}
+
 
 
     
@@ -155,7 +184,9 @@ body{
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
-    /* #profile img{width: 70%; margin: 0 15%;} */
+    
+    .showcase h1{font-size: 1.7rem; position: absolute; top: 400px; right: 510px;}
+    .showcase p{font-size: 1rem; position: absolute; top: 450px;}
   
    
   }
