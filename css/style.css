@@ -44,27 +44,33 @@ img{
     margin-right: auto;
 }
 /* Style projects page */
+
+#hartigan{
+    position: absolute;
+    top: 200px;
+    left: 50px;
+}
 .project h1{
     font-weight: 100;
     position: absolute;
-    top: 100px;
+    top: 80px;
     left: 5px;
 }
 .project h2{
     font-weight: 100;
     position: absolute;
-    top: 200px;
+    top: 150px;
     left: 55px;
 }
 .project p{
     position: absolute;
-    top: 230px;
+    top: 500px;
     text-align: center;
 }
 #skillstitle{
     font-weight: 100;
     position: absolute;
-    top: 750px;
+    top: 1000px;
     left: 60px;
 }
 /* Style top navigation */
@@ -157,6 +163,11 @@ footer {
 
 #name{ position:absolute; top: 450px; left: 120px;}
 #description{position: absolute; top: 500px; left: 180px;}
+.project h1{position: absolute; left: 210px;}
+.project h2{position: absolute; left: 250px;}
+.project p{font-size: 1.5em;}
+#skillstitle{position: absolute; top: 1100px; left: 250px;}
+#hartigan{position: absolute; left: 250px;}
 
 
   /* For desktop */
@@ -178,3 +189,8 @@ footer {
 
 #name{position: absolute; top: 320px; left: 320px; font-size: 3em; font-weight: 150;}
 #description{position: absolute; top: 400px; left: 420px; font-size: 1.5em;} 
+.project p{font-size: 1em; width: 80%; position: absolute; left: 140px;}
+.project h2{position: absolute; left: 580px;}
+.project h1{position: absolute; left: 530px;}
+#skillstitle{position: absolute; top: 750px; left: 590px;}
+#hartigan{position: absolute; left: 580px;}
