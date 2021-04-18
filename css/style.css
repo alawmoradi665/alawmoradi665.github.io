@@ -65,29 +65,24 @@ body{
 
 }
 
-/* Style about page */
-img{
+/* Style about page (mobile phone)*/
+.roundimg{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 280px;
     height: 280px;
-    border-radius: 50%;
-   
+    border-radius: 50%;  
 }
-
 .about h2{
     font-weight: 100;
 }
-
 .about i{
     font-weight: 500;
 }
-
 .experience{
     text-decoration: overline;
 }
-
 .info{
     width: 80%;
     text-align: center;
@@ -96,7 +91,7 @@ img{
     margin-right: auto;
 }
 
-/* Style projects page */
+/* Style projects page (mobile phone) */
 #hartigan{
     position: absolute;
     top: 200px;
@@ -125,7 +120,30 @@ img{
     top: 1000px;
     left: 60px;
 }
-/* Style contact page */
+
+/* Style blog page (mobile phone) */ 
+.blog{
+    position: relative;
+    top: 50px;
+}
+.blog h1{
+    font-weight: 150;
+    text-align: center;
+}
+.blog img{
+    width: 100vw;
+    height: 30vh;
+}
+.blog h3{
+    font-weight: 100;
+    font-size: 1.2em;
+    text-decoration: overline;
+}
+.blog p{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Style contact page (mobile phone) */
 .contact h1{
     font-weight: 100;
     position: absolute;
@@ -165,8 +183,6 @@ footer {
 
   /* For tablets */
   @media only screen and (min-width: 600px) {
-  /*larger than 601px - 768px*/
-
     .col-s-1 {width: 8.33%;}
     .col-s-2 {width: 16.66%;}
     .col-s-3 {width: 25%;}
@@ -180,19 +196,26 @@ footer {
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
 
+/* About */
 #name{ position:absolute; top: 450px; left: 120px;}
 #description{position: absolute; top: 500px; left: 180px;}
+/* Projects */
 .project h1{position: absolute; left: 210px;}
 .project h2{position: absolute; left: 250px;}
 .project p{font-size: 1.5em;}
 #skillstitle{position: absolute; top: 1100px; left: 250px;}
 #hartigan{position: absolute; left: 250px;}
+/* Contact */
+.contact h1{font-size: 2.5em; position: absolute; top: 450px; left: 280px;}
+#email{font-size: 1.5em; position: absolute; top: 530px; left: 280px;}
+#nr{font-size: 1.5em; position: absolute; top: 600px; left: 280px;}
+/* Blog */
+.blog img{width: 400px; height: 400px; float: left;}
+.blog p (float: right;)
 
 
   /* For desktop */
   @media only screen and (min-width: 769px) {
-  /*anything beyond 769px*/
-    
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
     .col-3 {width: 25%;}
@@ -205,11 +228,18 @@ footer {
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
-
+/* About */
 #name{position: absolute; top: 320px; left: 320px; font-size: 3em; font-weight: 150;}
 #description{position: absolute; top: 400px; left: 420px; font-size: 1.5em;} 
+/* Project */
 .project p{font-size: 1em; width: 80%; position: absolute; left: 140px;}
 .project h2{position: absolute; left: 580px;}
 .project h1{position: absolute; left: 530px;}
 #skillstitle{position: absolute; top: 750px; left: 590px;}
 #hartigan{position: absolute; left: 580px;}
+/* Contact */
+.contact h1{position: absolute; top: 320px; left: 600px; font-size: 3em;}
+#email{position: absolute; top: 400px; left: 600px;}
+#nr{position: absolute; top: 450px; left: 600px;}
+/* Blog */
+.drop{clear: both;}
