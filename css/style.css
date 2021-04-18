@@ -5,74 +5,6 @@
 
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    color: #583f1c;
-    background-color: #dbbca4;
-
-}
-
-/* Style about page */
-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 280px;
-    height: 280px;
-    border-radius: 50%;
-   
-}
-
-.about h2{
-    font-weight: 100;
-}
-
-.about i{
-    font-weight: 500;
-}
-
-.experience{
-    text-decoration: overline;
-}
-
-.info{
-    width: 80%;
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-/* Style projects page */
-
-#hartigan{
-    position: absolute;
-    top: 200px;
-    left: 50px;
-}
-.project h1{
-    font-weight: 100;
-    position: absolute;
-    top: 80px;
-    left: 5px;
-}
-.project h2{
-    font-weight: 100;
-    position: absolute;
-    top: 150px;
-    left: 55px;
-}
-.project p{
-    position: absolute;
-    top: 500px;
-    text-align: center;
-}
-#skillstitle{
-    font-weight: 100;
-    position: absolute;
-    top: 1000px;
-    left: 60px;
-}
 /* Style top navigation */
 section {
     display: -webkit-flex;
@@ -125,6 +57,93 @@ a:hover{
     left: 40px;
 }
 
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    color: #583f1c;
+    background-color: #dbbca4;
+
+}
+
+/* Style about page */
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+   
+}
+
+.about h2{
+    font-weight: 100;
+}
+
+.about i{
+    font-weight: 500;
+}
+
+.experience{
+    text-decoration: overline;
+}
+
+.info{
+    width: 80%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style projects page */
+#hartigan{
+    position: absolute;
+    top: 200px;
+    left: 50px;
+}
+.project h1{
+    font-weight: 100;
+    position: absolute;
+    top: 80px;
+    left: 5px;
+}
+.project h2{
+    font-weight: 100;
+    position: absolute;
+    top: 150px;
+    left: 55px;
+}
+.project p{
+    position: absolute;
+    top: 500px;
+    text-align: center;
+}
+#skillstitle{
+    font-weight: 100;
+    position: absolute;
+    top: 1000px;
+    left: 60px;
+}
+/* Style contact page */
+.contact h1{
+    font-weight: 100;
+    position: absolute;
+    top: 250px;
+    left: 110px;
+}
+#email{
+    position: absolute;
+    top: 320px;
+    left: 110px;
+    font-size: 1.2em;
+}
+#nr{
+    position: absolute;
+    top: 380px;
+    left: 110px;
+    font-size: 1.2em;
+}
 
 /* Style the footer */
 footer {
