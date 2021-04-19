@@ -15,21 +15,22 @@ body{
 
 /* Style top navigation */
 section {
-    display: -webkit-flex;
     display: flex;
   }
 
 /* Style the navigation bar */
 nav {
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
     background: #f7eadb;
-    padding: 10px;
+    padding: 20px;
     text-align: end;
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 999;
 
   }
 
@@ -51,44 +52,48 @@ li a {
   }
 
 a:hover{
-      color: #ffffff;
+      color: #dbbca4;
       transition: 0.5s;
   }
 
   /* Style homepage */
 
-#name{
-    display:flex;
-    margin-top: 80%;
-    margin-left: 10%;
-    font-weight: 150;
-}
-
-#description{
+.hero {
+    width: 100%;
+    height: 90vh;
     display: flex;
-    margin-left: 15%;
+    flex-direction: column;
+    justify-content: center;
 }
 
-@media only screen and (min-width: 768px){
-    #name{
-        margin-top: 60%;  
+.hero h1{
+    font-size: 3em;
+    font-weight: 150;
+    margin-left: 280px;
+}
+.hero p{
+    font-size: 1.5em;
+    margin-left: 380px;
+}
+
+@media only screen and (max-width: 768px){
+    .hero h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        font-size: 2.2em;
     }
-    #description{
-        margin-top: 2%;
+    .hero p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        font-size: 1.2em;
     }  
 }
 
-@media only screen and (min-width: 769px){
-    #name{
-        margin-top: 23%;
-        margin-left: 20%;
-        font-size: 3em;
-    }
-    #description{
-        margin-left: 25%;
-        font-size: 1.5em;
-    }
-}
 
 /* Style about page */
 .roundimg{
@@ -98,7 +103,7 @@ a:hover{
     width: 280px;
     height: 280px;
     border-radius: 50%; 
-    margin-top: 5%; 
+    margin-top: 40px; 
 }
 .about h2{
     font-weight: 100;
@@ -115,7 +120,6 @@ a:hover{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    
 }
 
 
@@ -129,7 +133,7 @@ a:hover{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5%;
+    margin-top: 20px;
     
 }
 .project h1{
@@ -137,7 +141,7 @@ a:hover{
     justify-content: center;
     text-align: center;
     font-weight: 100;
-    margin-top: 15%;
+    margin-top: 80px;
 
 }
 .project h2{
@@ -145,11 +149,26 @@ a:hover{
     justify-content: center;
     text-align: center;
     font-weight: 100;
-    margin-top: 10%;
+    margin-top: 20px;
 }
 #hartigan{
     display: flex;
     justify-content: center;
+}
+
+#ruby{
+    width: 55px;
+    
+
+}
+#rails{
+    width: 55px;
+
+}
+
+i{
+    font-size: 80px;
+    
 }
 
 @media only screen and (min-width: 768px){
@@ -158,68 +177,53 @@ a:hover{
     }
 }
 
-
 /* Style blog page */ 
 
-.blog h1{
+.title{
     display: flex;
     justify-content: center;
-    margin-top: 15%;
-    font-weight: 150;
-}
-
-.posts h3{
-    font-size: 1.5em;
+    text-align: center;
     font-weight: 100;
+    margin-top: 80px;
+}
+.posts{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.posts p{
-    font-family: 'Times New Roman', Times, serif;
-}
-.post1{
-    display: flex;
-    justify-content: center;
-    align-items: column;
-    flex-wrap: wrap;  
-    margin-top: 10%;
-}
-.post2{
-    display: flex;
-    justify-content: center;
-    align-items: column;
-    flex-wrap: wrap;  
-}
-.post3{
-    display: flex;
-    justify-content: center;
-    align-items: column;
-    flex-wrap: wrap;  
-}
-.post4{
-    display: flex;
-    justify-content: center;
-    align-items: column;
-    flex-wrap: wrap;  
-}
-.post5{
-    display: flex;
-    justify-content: center;
-    align-items: column;
-    flex-wrap: wrap;  
-}
-
-.posts img{
-    width: 350px;
-    height: 250px;
-}
-
-@media only screen and (min-width: 768px) {
+.posts > div {
+    background-color: #f7eadb;
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
     
+}
+.posts img{
+    float: left;
+    width: 300px;
+    margin-right: 5%;
+}
+.drop{
+    display: block;
+}
+
+.posts a{
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px){
+    .posts img{
+        width: 100% !important;
+    }
 }
 
 
 /* Style contact page */
 
+.contact{
+    height: 55vh;
+}
 .contact h1 {
     display: flex;
     margin-left: 30%;
@@ -259,78 +263,35 @@ a:hover{
 
 /* Style the footer */
 footer {
-    background-color: #9e9e9e;
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    height: 20px;
     text-align: center;
-    color: #ffffff;
-    position: fixed;
     bottom: 0;
     width: 100%;
+    margin-top: 20px;
+    
   }
-/* 
-  /* For mobile phones: */
-[class*="col-"] {
-    width: 100%;
-}
-.about{width: 100%;}
- 
 
-  /* For tablets */
-  @media only screen and (min-width: 600px) {
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
+  #linkedin{
+      color: #0e76a8;
+      font-size: 30px;
+  }
 
-/* About */
-/* #name{ position:absolute; top: 450px; left: 120px;}
-#description{position: absolute; top: 500px; left: 180px;} */
-/* Projects */
-
-/* Contact */
-/* .contact h1{font-size: 2.5em; position: absolute; top: 450px; left: 280px;}
-#email{font-size: 1.5em; position: absolute; top: 530px; left: 280px;}
-#nr{font-size: 1.5em; position: absolute; top: 600px; left: 280px;} */
-/* Blog */
-/* .blog img{width: 400px; height: 400px; float: left;}
-.blog p {float: right;} */
-
-  
-  /* For desktop */
-  @media only screen and (min-width: 769px) {
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-/* Homepage */
-/* #name{position: absolute; top: 320px; left: 320px; font-size: 3em; font-weight: 150;}
-#description{position: absolute; top: 400px; left: 420px; font-size: 1.5em;}  */
-/* Project */
-
-/* Contact */
-/* .contact h1{position: absolute; top: 320px; left: 600px; font-size: 3em;} */
-/* #email{position: absolute; top: 400px; left: 600px;}
-#nr{position: absolute; top: 450px; left: 600px;} */
-/* Blog */
-/* .drop {clear: both;}
-  } */
-
-
-} 
+  #github{
+      color: #000;
+      font-size: 30px;
+  }
+  .button{
+      font-size: 15px;
+      padding: 5px 15px;
+      background-color: #f7eadb;
+      text-decoration: none;
+      color: #583f1c;
+      margin-left: 10px;
+      margin-right: 10px;
+      font-weight: 600;
+      
   }
