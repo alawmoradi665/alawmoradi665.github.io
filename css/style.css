@@ -5,13 +5,21 @@
 
 }
 
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    color: #583f1c;
+    background-color: #dbbca4;
+
+}
+
 /* Style top navigation */
 section {
     display: -webkit-flex;
     display: flex;
   }
 
-/* Style the navigation menu */
+/* Style the navigation bar */
 nav {
     -webkit-flex: 1;
     -ms-flex: 1;
@@ -19,6 +27,9 @@ nav {
     background: #f7eadb;
     padding: 10px;
     text-align: end;
+    position: fixed;
+    top: 0;
+    width: 100%;
 
   }
 
@@ -44,35 +55,50 @@ a:hover{
       transition: 0.5s;
   }
 
-  /* Style homepage (mobile phones) */
+  /* Style homepage */
+
 #name{
-    position: absolute;
-    top: 350px;
-    left: 20px;
+    display:flex;
+    margin-top: 80%;
+    margin-left: 10%;
     font-weight: 150;
 }
+
 #description{
-    position: absolute;
-    top: 400px;
-    left: 40px;
+    display: flex;
+    margin-left: 15%;
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    color: #583f1c;
-    background-color: #dbbca4;
-
+@media only screen and (min-width: 768px){
+    #name{
+        margin-top: 60%;  
+    }
+    #description{
+        margin-top: 2%;
+    }  
 }
 
-/* Style about page (mobile phone)*/
+@media only screen and (min-width: 769px){
+    #name{
+        margin-top: 23%;
+        margin-left: 20%;
+        font-size: 3em;
+    }
+    #description{
+        margin-left: 25%;
+        font-size: 1.5em;
+    }
+}
+
+/* Style about page */
 .roundimg{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 280px;
     height: 280px;
-    border-radius: 50%;  
+    border-radius: 50%; 
+    margin-top: 5%; 
 }
 .about h2{
     font-weight: 100;
@@ -89,79 +115,147 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
-/* Style projects page (mobile phone) */
-#hartigan{
-    position: absolute;
-    top: 200px;
-    left: 50px;
+
+/* Style projects page  */
+
+.project p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    
 }
 .project h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
     font-weight: 100;
-    position: absolute;
-    top: 80px;
-    left: 5px;
+    margin-top: 15%;
+
 }
 .project h2{
-    font-weight: 100;
-    position: absolute;
-    top: 150px;
-    left: 55px;
-}
-.project p{
-    position: absolute;
-    top: 500px;
+    display: flex;
+    justify-content: center;
     text-align: center;
-}
-#skillstitle{
     font-weight: 100;
-    position: absolute;
-    top: 1000px;
-    left: 60px;
+    margin-top: 10%;
+}
+#hartigan{
+    display: flex;
+    justify-content: center;
 }
 
-/* Style blog page (mobile phone) */ 
-.blog{
-    position: relative;
-    top: 50px;
+@media only screen and (min-width: 768px){
+    .project h1{
+        margin-top: 10%;
+    }
 }
+
+
+/* Style blog page */ 
+
 .blog h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
     font-weight: 150;
-    text-align: center;
 }
-.blog img{
-    width: 100vw;
-    height: 30vh;
-}
-.blog h3{
+
+.posts h3{
+    font-size: 1.5em;
     font-weight: 100;
-    font-size: 1.2em;
-    text-decoration: overline;
 }
-.blog p{
+
+.posts p{
     font-family: 'Times New Roman', Times, serif;
 }
+.post1{
+    display: flex;
+    justify-content: center;
+    align-items: column;
+    flex-wrap: wrap;  
+    margin-top: 10%;
+}
+.post2{
+    display: flex;
+    justify-content: center;
+    align-items: column;
+    flex-wrap: wrap;  
+}
+.post3{
+    display: flex;
+    justify-content: center;
+    align-items: column;
+    flex-wrap: wrap;  
+}
+.post4{
+    display: flex;
+    justify-content: center;
+    align-items: column;
+    flex-wrap: wrap;  
+}
+.post5{
+    display: flex;
+    justify-content: center;
+    align-items: column;
+    flex-wrap: wrap;  
+}
 
-/* Style contact page (mobile phone) */
-.contact h1{
-    font-weight: 100;
-    position: absolute;
-    top: 250px;
-    left: 110px;
+.posts img{
+    width: 350px;
+    height: 250px;
 }
-#email{
-    position: absolute;
-    top: 320px;
-    left: 110px;
-    font-size: 1.2em;
+
+@media only screen and (min-width: 768px) {
+    
 }
-#nr{
-    position: absolute;
-    top: 380px;
-    left: 110px;
-    font-size: 1.2em;
+
+
+/* Style contact page */
+
+.contact h1 {
+    display: flex;
+    margin-left: 30%;
+    margin-top: 80%;
+    font-weight: 150;
 }
+
+.contact p{
+    display: flex;
+    margin-left: 30%;
+    margin-top: 10%;
+}
+
+@media only screen and (min-width: 768px){
+    .contact h1{
+        margin-top: 50%;  
+        margin-left: 35%;
+        font-size: 3em;
+    }  
+   .contact p{
+       margin-top: 5%;
+       margin-left: 35%;
+       font-size:1.5em;
+   }
+}
+
+@media only screen and (min-width: 769px){
+    .contact h1{
+        margin-top: 20%;
+        margin-left: 40%;
+    }
+    .contact p{
+        margin-left: 40%;
+    }
+}
+
 
 /* Style the footer */
 footer {
@@ -173,7 +267,7 @@ footer {
     bottom: 0;
     width: 100%;
   }
-
+/* 
   /* For mobile phones: */
 [class*="col-"] {
     width: 100%;
@@ -197,23 +291,19 @@ footer {
     .col-s-12 {width: 100%;}
 
 /* About */
-#name{ position:absolute; top: 450px; left: 120px;}
-#description{position: absolute; top: 500px; left: 180px;}
+/* #name{ position:absolute; top: 450px; left: 120px;}
+#description{position: absolute; top: 500px; left: 180px;} */
 /* Projects */
-.project h1{position: absolute; left: 210px;}
-.project h2{position: absolute; left: 250px;}
-.project p{font-size: 1.5em;}
-#skillstitle{position: absolute; top: 1100px; left: 250px;}
-#hartigan{position: absolute; left: 250px;}
+
 /* Contact */
-.contact h1{font-size: 2.5em; position: absolute; top: 450px; left: 280px;}
+/* .contact h1{font-size: 2.5em; position: absolute; top: 450px; left: 280px;}
 #email{font-size: 1.5em; position: absolute; top: 530px; left: 280px;}
-#nr{font-size: 1.5em; position: absolute; top: 600px; left: 280px;}
+#nr{font-size: 1.5em; position: absolute; top: 600px; left: 280px;} */
 /* Blog */
-.blog img{width: 400px; height: 400px; float: left;}
-.blog p (float: right;)
+/* .blog img{width: 400px; height: 400px; float: left;}
+.blog p {float: right;} */
 
-
+  
   /* For desktop */
   @media only screen and (min-width: 769px) {
     .col-1 {width: 8.33%;}
@@ -228,18 +318,19 @@ footer {
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
-/* About */
-#name{position: absolute; top: 320px; left: 320px; font-size: 3em; font-weight: 150;}
-#description{position: absolute; top: 400px; left: 420px; font-size: 1.5em;} 
+/* Homepage */
+/* #name{position: absolute; top: 320px; left: 320px; font-size: 3em; font-weight: 150;}
+#description{position: absolute; top: 400px; left: 420px; font-size: 1.5em;}  */
 /* Project */
-.project p{font-size: 1em; width: 80%; position: absolute; left: 140px;}
-.project h2{position: absolute; left: 580px;}
-.project h1{position: absolute; left: 530px;}
-#skillstitle{position: absolute; top: 750px; left: 590px;}
-#hartigan{position: absolute; left: 580px;}
+
 /* Contact */
-.contact h1{position: absolute; top: 320px; left: 600px; font-size: 3em;}
-#email{position: absolute; top: 400px; left: 600px;}
-#nr{position: absolute; top: 450px; left: 600px;}
+/* .contact h1{position: absolute; top: 320px; left: 600px; font-size: 3em;} */
+/* #email{position: absolute; top: 400px; left: 600px;}
+#nr{position: absolute; top: 450px; left: 600px;} */
 /* Blog */
-.drop{clear: both;}
+/* .drop {clear: both;}
+  } */
+
+
+} 
+  }
