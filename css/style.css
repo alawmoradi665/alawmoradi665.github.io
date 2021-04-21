@@ -9,7 +9,8 @@ body{
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     color: #583f1c;
-    background-color: #dbbca4;
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    height: 100vh;
 
 }
 
@@ -53,7 +54,7 @@ li a {
 
 a:hover{
       color: #dbbca4;
-      transition: 0.5s;
+      transition: 0.7s;
   }
 
   /* Style homepage */
@@ -111,6 +112,9 @@ a:hover{
 .about i{
     font-weight: 500;
 }
+.about p{
+    font-size: 1.2em;
+}
 .experience{
     text-decoration: overline;
 }
@@ -134,7 +138,7 @@ a:hover{
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    
+    font-size: 1.2em;    
 }
 .project h1{
     display: flex;
@@ -149,27 +153,31 @@ a:hover{
     justify-content: center;
     text-align: center;
     font-weight: 100;
-    margin-top: 20px;
+    margin-top: 70px;
 }
 #hartigan{
     display: flex;
     justify-content: center;
 }
 
-#ruby{
+.icon{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 55px;
-    
-
-}
-#rails{
-    width: 55px;
-
+    height: 55px;
 }
 
-i{
-    font-size: 80px;
-    
+.row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
+.column{
+    padding: 50px;
+    margin-bottom: 40px;
+}
+
 
 @media only screen and (min-width: 768px){
     .project h1{
@@ -178,7 +186,7 @@ i{
 }
 
 /* Style blog page */ 
-
+/* class title goes for all titles throughout the pages */
 .title{
     display: flex;
     justify-content: center;
@@ -190,18 +198,21 @@ i{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    
 }
 
 .posts > div {
     background-color: #f7eadb;
-    width: 80%;
+    width: 60%;
     margin: 10px;
     padding: 10px;
+    margin-top: 40px;
     
 }
 .posts img{
     float: left;
     width: 300px;
+    height: 200px;
     margin-right: 5%;
 }
 .drop{
@@ -222,44 +233,47 @@ i{
 /* Style contact page */
 
 .contact{
-    height: 55vh;
+    height: 15vh;
 }
 .contact h1 {
     display: flex;
-    margin-left: 30%;
-    margin-top: 80%;
+    justify-content: center;
+    align-items: center;
     font-weight: 150;
+    margin-top: 80%;
 }
 
 .contact p{
     display: flex;
-    margin-left: 30%;
-    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
 }
 
 @media only screen and (min-width: 768px){
-    .contact h1{
-        margin-top: 50%;  
-        margin-left: 35%;
+    .contact h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 150;
+        margin-top: 50%;
         font-size: 3em;
-    }  
-   .contact p{
-       margin-top: 5%;
-       margin-left: 35%;
-       font-size:1.5em;
-   }
+    }
+    
+    .contact p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+    }
 }
 
-@media only screen and (min-width: 769px){
+@media only screen and (min-width: 1000px){
     .contact h1{
         margin-top: 20%;
-        margin-left: 40%;
     }
-    .contact p{
-        margin-left: 40%;
-    }
-}
 
+    
+}
 
 /* Style the footer */
 footer {
@@ -278,12 +292,45 @@ footer {
   #linkedin{
       color: #0e76a8;
       font-size: 30px;
+      margin-right: 10px;
   }
 
   #github{
       color: #000;
       font-size: 30px;
   }
+
+  #github:hover{
+     transform: scale(1.5);
+  }
+
+  #linkedin:hover{
+    transform: scale(1.5);
+  }
+
+  #email{
+    color: #000;
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+#email:hover{
+  transform: scale(1.5);
+  transition: 0.7s;
+}
+
+#twitter{
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #1DA1F2;
+}
+
+#twitter:hover{
+    transform: scale(1.5);
+
+}
+
   .button{
       font-size: 15px;
       padding: 5px 15px;
@@ -293,5 +340,19 @@ footer {
       margin-left: 10px;
       margin-right: 10px;
       font-weight: 600;
+      text-decoration: overline;
       
   }
+
+  .button:hover{
+      background-color: #ffff;
+      
+  }
+
+  .button:active{
+    box-shadow: 0 5px #583f1c;
+    transform: translateY(4px);
+  }
+
+
+  
