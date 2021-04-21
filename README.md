@@ -1,5 +1,5 @@
 Link to published portfolio website
-https://naughty-morse-b703d0.netlify.app/
+http://alawmoradi.com/
 
 Link to GitHub repo
 https://github.com/alawmoradi665/alawmoradi665.github.io/tree/master
