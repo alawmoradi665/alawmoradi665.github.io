@@ -1,0 +1,47 @@
+commit fb75ef74dc7e8488b55f8edacafa654114b4a40a
+Author: alawmoradi665 <alaw.m@hotmail.com>
+Date:   Wed Apr 21 11:18:06 2021 +1000
+
+    add-icons-style-contactpage
+
+commit 01975e933639a983bdf668c39f6f73294703f603
+Author: alawmoradi665 <alaw.m@hotmail.com>
+Date:   Mon Apr 19 17:10:12 2021 +1000
+
+    footer
+
+commit f003e01b5306e45e087665afb98c7d0d46a3fea0
+Author: alawmoradi665 <alaw.m@hotmail.com>
+Date:   Mon Apr 19 12:56:18 2021 +1000
+
+    add-blogposts
+
+commit 0c2d6cccdc990d793fd82fe191919752a0f16d8b
+Author: alawmoradi665 <alaw.m@hotmail.com>
+Date:   Sun Apr 18 16:34:22 2021 +1000
+
+    blogedit
+
+commit 70d33780753b299da68d506e9f2e1b099029381b
+Author: alawmoradi665 <alaw.m@hotmail.com>
+Date:   Sun Apr 18 15:04:02 2021 +1000
+
+    style-contact-page
+
+commit 589f4bf046deb6e1b7dc61489e2a1dd5d4d008cd
+Author: alawmoradi665 <alaw.m@hotmail.com>
+Date:   Sun Apr 18 11:41:30 2021 +1000
+
+    new-portfolio-about+projects
+
+commit ed7c96e486892b1201e3a415cbfc2ec0e1ebc828
+Author: alawmoradi665 <alaw.m@hotmail.com>
+Date:   Sun Apr 18 10:38:55 2021 +1000
+
+    new-portfolio
+
+commit 54627da6827c99749445835648f746ea9ca1ae6e
+Author: alawmoradi665 <alaw.m@hotmail.com>
+Date:   Sun Apr 18 10:30:36 2021 +1000
+
+    new-portfolio
