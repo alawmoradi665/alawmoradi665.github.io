@@ -5,6 +5,7 @@
 
 }
 
+<<<<<<< HEAD
 body{
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
@@ -142,6 +143,174 @@ footer {
   @media only screen and (min-width: 600px) {
   /*larger than 601px - 768px*/
 
+=======
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root{
+    --primary-color: rgba(238, 230, 216, 0.3);
+    --overlay-color: rgb(252, 229, 196);
+    --menu-speed: 0.75s;
+}
+body{
+    background: url('../img/bgimg.jpg') center center/cover;
+    background-repeat: repeat-y;
+    line-height: 1.5;
+    color: #9e9e9e;
+}
+
+.container{
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 3rem;
+}
+
+/* .showcase{
+    background-color: var(--primary-color);
+    color: #9e9e9e;
+    height: 100vh;
+    width: 100%;
+    background: url('../img/background.jpg') no-repeat center center/cover;
+    background-repeat: repeat-y;
+    
+    
+} */
+
+.showcase .showcase-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+
+}
+
+a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+/* Styling about page */
+
+img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    position: absolute;
+    top: 90px;
+  
+}
+
+h1{
+    text-align: center;
+    position: absolute;
+    top: 400px;
+    right: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    
+}
+
+p{
+    text-align: center;
+    position: absolute;
+    top: 435px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 1em;
+
+}
+
+/* Styling experience section */
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    position: absolute;
+    top: 850px;
+    right: 50px;
+    
+}
+
+.box{
+    width: 150px;
+    height: 280px;
+    background: #fcf7ef;
+    
+}
+.flex-container{
+    width: 1000px;
+    height: 300px;
+    background: #9e9e9e;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 750px;
+    right: 230px;
+
+}
+
+
+/* Styling resume button */
+
+.btm{
+    display: inline-block;
+    border: none;
+    background-color: #fcf7ef;
+    color: #b5b5b5;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    transition: opacity 0.2s ease-in;
+}
+
+.btm:hover{
+    opacity: 0.5;
+}
+
+
+/* #giticon{
+    position: absolute;
+    bottom: 10px;
+    left: 180px;
+    color: #000;
+    
+
+}
+
+#inicon{
+    position: absolute;
+    bottom: 10px;
+    right: 180px;
+    color: #0a66c2;
+    
+    
+} */
+
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+  .showcase h1{ font-size: 1.3rem;}
+  .showcase p{ font-size: 0.9rem;}
+  .btm{ font-size: 0.7rem;}
+
+  
+  @media only screen and (min-width: 600px) {
+  /*larger than 601px - 768px*/
+    /* For tablets: */
+>>>>>>> da37f6619e892fa52e3d20f9bbceff96b5b70b4f
     .col-s-1 {width: 8.33%;}
     .col-s-2 {width: 16.66%;}
     .col-s-3 {width: 25%;}
@@ -155,6 +324,7 @@ footer {
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
 
+<<<<<<< HEAD
 #name{ position:absolute; top: 450px; left: 120px;}
 #description{position: absolute; top: 500px; left: 180px;}
 
@@ -163,6 +333,21 @@ footer {
   @media only screen and (min-width: 769px) {
   /*anything beyond 769px*/
     
+=======
+   .showcase h1{font-size: 2rem; position: absolute; top: 400px; right: 125px;}
+   .showcase p{font-size: 1.2rem; position: absolute; top: 450px;}
+   .showcase h2{font-size: 2rem; position: absolute; top: 860px; right: 200px;}
+   /* .showcase img{position: absolute; top: 140px;} */
+
+
+
+    
+  }
+
+  @media only screen and (min-width: 769px) {
+  /*anything beyond 769px*/
+    /* For desktop: */
+>>>>>>> da37f6619e892fa52e3d20f9bbceff96b5b70b4f
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
     .col-3 {width: 25%;}
@@ -175,6 +360,18 @@ footer {
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+<<<<<<< HEAD
 
 #name{position: absolute; top: 320px; left: 320px; font-size: 3em; font-weight: 150;}
 #description{position: absolute; top: 400px; left: 420px; font-size: 1.5em;} 
+=======
+    
+    .showcase h1{font-size: 1.7rem; position: absolute; top: 400px; right: 510px;}
+    .showcase p{font-size: 1rem; position: absolute; top: 450px; width: 1200px; right: 125px;}
+    .showcase h2{font-size: 1.8rem; position: absolute; top: 650px; right: 575px;}
+    
+
+  
+   
+  }
+>>>>>>> da37f6619e892fa52e3d20f9bbceff96b5b70b4f
